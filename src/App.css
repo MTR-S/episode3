@@ -1,0 +1,191 @@
+:root {
+
+    --input-color: ##322F20;
+    --input-border: #BCD2EE;
+    --input-background: #fff;
+    --input-placeholder: #CBD1DC;
+
+    --input-border-focus:#090302;
+
+    --group-color: var(--input-color);
+    --group-border: var(--input-border);
+    --group-background: #EEF4FF;
+
+    --group-color-focus: #fff;
+    --group-border-focus: var(--input-border-focus);
+    --group-background-focus: #678EFE;
+
+}
+
+@font-face {
+    font-family: myFontNorwester;
+    src: url(fonts/norwester.otf);
+}
+
+@font-face {
+    font-family: myFontKollektif;
+    src: url(fonts/Kollektif.ttf);
+}
+
+
+.addTaskDiv {
+    margin-bottom: 26.8vh;
+    background-color: #C75146;
+    border-bottom: solid;
+    border-color: #BCD2EE;
+    box-shadow:  -10px 10px 10px  #CBD1DC;
+    display: flex;
+    justify-content: space-between;
+}
+
+.TaskTitle {
+    font-size: 70px;
+    font-family: myFontNorwester;
+    margin-left: 15vh;
+    text-decoration: overline;
+    color: #BCD2EE;
+    letter-spacing: 1vh;
+}
+
+.addTaskFunc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin-right: 20%;
+}
+
+.addTaskButton {
+    font-family: myFontKollektif;
+    height: 5vh;
+    width: 10vh;
+    margin-right: 5px;
+    border-radius: 6px;
+    border-color: #BCD2EE;
+    background-color: #BCD2EE;
+    box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
+    box-sizing: border-box;
+    color: #322F20;
+    cursor: pointer;
+    text-transform: none;
+    transform: translateZ(0);
+    transition: all .2s,box-shadow .08s ease-in;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.addTaskButton:hover {
+    background-color: #b0c4de;
+    border-color: #b0c4de;
+}
+
+.addTaskInput {
+    display: block;
+    width: 100%;
+    padding: 8px 16px;
+    line-height: 25px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 6px;
+    color: var(--input-color);
+    border: 1px solid var(--input-border);
+    background: var(--input-background);
+    transition: border .3s ease;
+    &::placeholder {
+        color: var(--input-placeholder);
+    }&:focus {
+        outline: none;
+        border-color: var(--input-border-focus);
+    }
+}
+
+.taskListDiv {
+    height: auto;
+    width: 100%;
+    color: #678EFE;
+}
+
+.taskList {
+    height: auto;
+    margin-inline: 5%;
+    padding-top: 1%;
+    padding-bottom: 3%;
+    padding-inline: 3%;
+    background-color: #C75146;
+    border-radius: 7px;
+}
+
+.taskTitle {
+    text-align: center;
+    text-decoration: underline;
+    padding-top: 1px;
+    color: #CBD1DC;
+    font-family: myFontNorwester;
+    letter-spacing: 0.5vh;
+
+}
+
+.uniqueTask {
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 20px;
+    margin-bottom: 10px;
+    border-bottom: #CBD1DC;
+    border: solid;
+    border-color: #C75146;
+    border-radius: 10px;
+    background-color: #fff;
+    text-align: center;   
+}
+
+.taskName {
+    font-family: myFontKollektif;
+    font-weight: lighter;
+    margin-left: 1%;
+    margin-right: auto;
+    margin-top: 3.8vh;
+    word-wrap: break-word;
+    overflow-y: auto;
+    max-height: 100px;
+    max-width: 70vw;
+}
+
+.deletTaskButton {
+    height: 4vh;
+    margin-top: 3vh;
+    font-family: myFontKollektif;
+    width: 10vh;
+    margin-right: 1%;
+    border-radius: 6px;
+    border-color: #BCD2EE;
+    background-color: #BCD2EE;
+    box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
+    box-sizing: border-box;
+    color: #322F20;
+    cursor: pointer;
+    text-transform: none;
+    transform: translateZ(0);
+    transition: all .2s,box-shadow .08s ease-in;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 9.9vh;
+    margin-top: 28vh;
+    text-align: center;
+    font-family: myFontKollektif;
+    background-color: #C75146;
+    box-shadow: 0px -10px 10px 10px  #CBD1DC;
+}
+
+.footerText {
+    color: #CBD1DC;
+    font-size: 150%;
+    font-family: myFontKollektif;
+}
