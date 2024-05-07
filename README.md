@@ -1,6 +1,6 @@
 # Task List 
 
-This project is a task list to learn how to start how to work with the react js library.
+This project is a task list to learn how to work with the react js library.
 
 ## UseState
 
